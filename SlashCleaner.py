@@ -22,11 +22,11 @@ def SlashCleaner(fileName):
                 cleanLine += character
             else:
                 if (character == '/'):
-                    if (lastCharacter != ' '):
+                    if ((lastCharacter != ' ')and(lastCharacter != '/')):
                         cleanLine += ' '
                         
                 if (lastCharacter == '/'):
-                    if (character != ' '):
+                    if ((character != ' ')and(character != '/')):
                         cleanLine += ' '
                         
                 cleanLine += character    
